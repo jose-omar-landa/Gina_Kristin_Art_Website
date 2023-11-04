@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gina Kristin Art - Digital Illustrations</title>
+    <script src="https://kit.fontawesome.com/4daba26ac9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="original_works.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
+    <div class=" above_navbar_image">
+        <img src="frontpageimages/front_image.png" alt="Gina Kristin Art" />
+    </div>
+
+    <!-- NavBar -->
+    <div class="navbar_content">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background: #FFFFFF; font-family: 'Baloo Bhai 2', cursive;">
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-family: 'Baloo Bhai 2', cursive; color: #430237" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle purplefont" style="color: #430237" data-toggle="dropdown" href="#" role="button">Portfolio</a>
+                            <div class="dropdown-menu" style="background: #F1F0FF;">
+                                <a class="dropdown-item" style="color: #230930; font-family: 'Baloo Bhai 2', cursive;" href="original_works.html">Original Works</a>
+                                <a class="dropdown-item" style="color: #230930; font-family: 'Baloo Bhai 2', cursive;" href="studies.html">Studies</a>
+                                <a class="dropdown-item" style="color: #230930; font-family: 'Baloo Bhai 2', cursive;" href="commissioned_art.html">Commissioned Works</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-family: 'Baloo Bhai 2', cursive; color: #430237 " href="commissions.html">Commissions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-family: 'Baloo Bhai 2', cursive; color: #430237 " href="about.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-family: 'Baloo Bhai 2', cursive; color: #430237 " href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+</head>
+
+<body class="body">
+
+    <!--Title Header -->
+    <div class="centertext">
+        <h1>Illustrations</h1>
+    </div>
+
+    <!-- Content: All content goes inside this div tag -->
+    <div class="content">
+
+
+
+        <!-- Album Images as Bootstrap Cards -->
+        <div class="card-deck" style="padding-left: 10%; padding-right: 10%;">
+
+            <!-- First Row First Image W/ Modal Code -->
+            <div class="card" style="height: 18rem;">
+                <img src="digital_illustrations/giselle_01.jpg" class="card-img" id="myImg" alt="...">
+            </div>
+            <div id="myModal" class="imgmodal">
+                <span class="closebutton">×</span>
+                <img src="digital_illustrations/giselle_01.jpg" class="imgmodal-content" id="myImg img01" alt="...">
+                <div id="captions"></div>
+            </div>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById('myImg');
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("captions");
+                img.onclick = function () {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    modalImg.alt = this.alt;
+                    captionText.innerHTML = this.alt;
+                }
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("closebutton")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+            </script>
+
+            <!-- First Row Second Image W/ Modal Code -->
+            <div class="card" style="height: 18rem;">
+                <img src="digital_illustrations/mermaid-2023.jpg" class="card-img" id="myImg02" alt="...">
+            </div>
+            <div id="myModal02" class="imgmodal">
+                <span class="closebutton02">×</span>
+                <img src="digital_illustrations/mermaid-2023.jpg" class="imgmodal-content" id="myImg02 img02" alt="...">
+                <div id="captions"></div>
+            </div>
+
+            <script>
+                // Get the modal
+                var modal02 = document.getElementById('myModal02');
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img02 = document.getElementById('myImg02');
+                var modalImg = document.getElementById("img02");
+                var captionText = document.getElementById("captions");
+                img02.onclick = function () {
+                    modal02.style.display = "block";
+                    modalImg.src = this.src;
+                    modalImg.alt = this.alt;
+                    captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span02 = document.getElementsByClassName("closebutton02")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span02.onclick = function () {
+                    modal02.style.display = "none";
+                }
+            </script>
+
+            <!-- First Row Third Image Modal Code -->
+            <div class="card" style="height: 18rem;">
+                <img src="digital_illustrations/ana-halloween.jpg" class="card-img" id="myImg03" alt="...">
+            </div>
+
+            <div id="myModal03" class="imgmodal">
+                <span class="closebutton03">×</span>
+                <img src="digital_illustrations/ana-halloween.jpg" class="imgmodal-content" id="myImg03 img03" alt="...">
+                <div id="captions"></div>
+            </div>
+
+            <script>
+                // Get the modal
+                var modal03 = document.getElementById('myModal03');
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img03 = document.getElementById('myImg03');
+                var modalImg = document.getElementById("img03");
+                var captionText = document.getElementById("captions");
+                img03.onclick = function () {
+                    modal03.style.display = "block";
+                    modalImg.src = this.src;
+                    modalImg.alt = this.alt;
+                    captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span03 = document.getElementsByClassName("closebutton03")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span03.onclick = function () {
+                    modal03.style.display = "none";
+                }
+            </script>
+
+        </div>
+
+    </div>
+
+
+    <!--SECOND ROW-->
+    <div class="content">
+
+
+
+        <!-- Album Images as Bootstrap Cards -->
+        <div class="card-deck" style="padding-left: 10%; padding-right: 10%;">
+
+            <!-- First Row First Image W/ Modal Code -->
+            <div class="card" style="height: 18rem;">
+                <img src="digital_illustrations/love-you.jpg" class="card-img" id="myImg04" alt="...">
+            </div>
+            <div id="myModal04" class="imgmodal">
+                <span class="closebutton04">×</span>
+                <img src="digital_illustrations/love-you.jpg" class="imgmodal-content" id="myImg04 img04" alt="...">
+                <div id="captions"></div>
+            </div>
+
+            <script>
+                // Get the modal
+                var modal04 = document.getElementById('myModal04');
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img04 = document.getElementById('myImg04');
+                var modalImg = document.getElementById("img04");
+                var captionText = document.getElementById("captions");
+                img04.onclick = function () {
+                    modal04.style.display = "block";
+                    modalImg.src = this.src;
+                    modalImg.alt = this.alt;
+                    captionText.innerHTML = this.alt;
+                }
+                // Get the <span> element that closes the modal
+                var span04 = document.getElementsByClassName("closebutton04")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span04.onclick = function () {
+                    modal04.style.display = "none";
+                }
+            </script>
+
+            <!-- First Row Second Image W/ Modal Code -->
+            <div class="card" style="height: 18rem;">
+                <!-- <img src="" class="card-img" id="myImg02" alt="Coming Soon!"> -->
+            </div>
+            <div id="myModal02" class="imgmodal">
+                <span class="closebutton02">×</span>
+                <img src="" class="imgmodal-content" id="myImg02 img02" alt="Coming Soon!">
+                <div id="captions"></div>
+            </div>
+
+            <script>
+                // Get the modal
+                var modal02 = document.getElementById('myModal02');
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img02 = document.getElementById('myImg02');
+                var modalImg = document.getElementById("img02");
+                var captionText = document.getElementById("captions");
+                img02.onclick = function () {
+                    modal02.style.display = "block";
+                    modalImg.src = this.src;
+                    modalImg.alt = this.alt;
+                    captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span02 = document.getElementsByClassName("closebutton02")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span02.onclick = function () {
+                    modal02.style.display = "none";
+                }
+            </script>
+
+            <!-- First Row Third Image Modal Code -->
+            <div class="card" style="height: 18rem;">
+                <!--  <img src="" class="card-img" id="myImg03" alt="Coming Soon!"> -->
+            </div>
+
+            <div id="myModal03" class="imgmodal">
+                <span class="closebutton03">×</span>
+                <img src="" class="imgmodal-content" id="myImg03 img03" alt="Coming Soon!">
+                <div id="captions"></div>
+            </div>
+
+            <script>
+                // Get the modal
+                var modal03 = document.getElementById('myModal03');
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img03 = document.getElementById('myImg03');
+                var modalImg = document.getElementById("img03");
+                var captionText = document.getElementById("captions");
+                img03.onclick = function () {
+                    modal03.style.display = "block";
+                    modalImg.src = this.src;
+                    modalImg.alt = this.alt;
+                    captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span03 = document.getElementsByClassName("closebutton03")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span03.onclick = function () {
+                    modal03.style.display = "none";
+                }
+            </script>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Title Header -->
+    <div class="centertext">
+        <h1>Video Games</h1>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="footerbar">
+        <div class="">
+            <span>
+                <a href="https://www.instagram.com/ginakristinart/?hl=en" target="_blank"><i class="fab fa-instagram" style="color: #430237; font-size: 1.25rem; padding: 5px 10px;"></i></a>
+            </span>
+            <span>
+                <a href="https://kassarole.itch.io" target="_blank"><i class="fa-brands fa-itch-io" style="color: #430237; font-size: 1.25rem; padding: 5px 10px;"></i></a>
+            </span>
+            <span>
+                <a href="https://www.twitch.tv/ginakristinart" target="_blank"><i class="fa-brands fa-twitch" style="color: #430237; font-size: 1.25rem; padding: 5px 10px;"></i></a>
+            </span>
+        </div>
+        <span>
+            <a href="#"><i class="far fa-copyright" style="color: #430237; font-size: 0.75rem;"></i></a>
+            <p class="footer_copyright_text"> Gina Kristin Art</p>
+        </span>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+
+</html>
